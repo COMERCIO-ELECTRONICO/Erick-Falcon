@@ -71,4 +71,16 @@ var operadoresMapyFilter = arregloNumero
         (item) => {
             return item == 4
         }
-    )
+)
+
+//SIRVE COMO UN ACUMULADOR, LO PODEMOS HACER CON UN ARREGLO
+var arregloReduce = [2, 1, 11, 3, 45]
+var valorSumaArreglo = arregloReduce
+
+    .reduce(
+        
+        (acumulador, item, indice, array) => {
+            return acumulador + item
+        }, 0
+)
+console.log(valorSumaArreglo)
