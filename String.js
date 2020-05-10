@@ -1,16 +1,21 @@
 // JavaScript source code
 //// Llaves {}[]
-var nombre = "David"
+var nombre = "Madison"
 console.log(nombre.length)
 console.log(nombre.indexOf("a"))
-console.log(nombre.search("a"))
-console.log(nombre.slice(1, 3))
-console.log(nombre.toLocaleLowerCase())
-var texto = "Hola world "
-console.log(texto.replace("hola", "hello"))
+console.log(nombre.search("d"))
+console.log(nombre.slice(0, 4))
+console.log(nombre.substr(0, 4))
+console.log(nombre.toLocaleUpperCase())
+var texto = "Hola mundo "
+console.log(texto.replace("Hola", "hello"))
 console.log(texto.concat(" ", nombre))
-consola.log(` $ { texto } mas mi nombre: $ { nombre } `)
-consola.log(texto.trim())
-consola.log(texto.split(''))
-consola.log(nombre.charAt(1))
+console.log(` $ { texto } mas mi nombre: $ { nombre } `)
+console.log(texto.trim())
+console.log(texto.split(''))
+console.log(nombre.charAt(4))
 
+const invertirCadena = cadena => cadena.split("").reverse().join("");
+
+let cadena = "Comercio Electronico";
+console.log("Cadena:", invertirCadena(texto));
