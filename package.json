@@ -1,0 +1,22 @@
+{
+  "name": "pr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Arrays.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COMERCIO-ELECTRONICO/Erick-Falcon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COMERCIO-ELECTRONICO/Erick-Falcon/issues"
+  },
+  "homepage": "https://github.com/COMERCIO-ELECTRONICO/Erick-Falcon#readme",
+  "dependencies": {
+    "joi": "^14.3.1"
+  }
+}
