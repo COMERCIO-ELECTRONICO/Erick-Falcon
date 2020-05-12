@@ -70,11 +70,11 @@ console.log("----------------------------------------")
 console.log("")
 /*-------------------------------------------------------------------------*/
 //AÑADIR DATOS
-/*
+
 anadirDatos(json, { nombre: "David", edad: "20", Fecha_Nacimiento: "1999/07/31", Telf: "0983530541"}, 0, (mensaje) => {
     console.log(mensaje)
 })
-*/
+
 
 console.log("----------------------------------------")
 console.log("EDITAR CAMPOS")
@@ -83,11 +83,11 @@ console.log("")
 /*-------------------------------------------------------------------------*/
 //EDITAR DATOS
 
-/*
+
  editarDatos(json, { nombres: "", edad: "", Fecha_Nacimiento: "", Telf: "" }, 2, (mensaje) => {
     console.log(mensaje)
 })
-*/
+
 
 
 /*-------------------------------------------------------------------------*/
@@ -97,9 +97,9 @@ console.log("----------------------------------------")
 console.log("")
 ////ENLISTAR DATOS
 
-/*
+
 listarDatos(json, (mensaje) => { console.log(mensaje) })
-*/
+
 
 console.log("----------------------------------------")
 console.log("ELIMINAR CAMPOS")
@@ -107,8 +107,6 @@ console.log("----------------------------------------")
 console.log("")
 ///ELIMINAR DATOS
 
-/*
 eliminarDatos(json, "CAMPO ELIMINADO" , 0, (mensaje) => {
     console.log(mensaje)
 })
-*/
