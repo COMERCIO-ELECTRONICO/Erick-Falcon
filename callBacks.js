@@ -3,7 +3,7 @@
 //API
 //Programacion funcional
 
-function primeraFuncion() {
+/*function primeraFuncion() {
     setTimeout(() => {
         console.log("primera")
 
@@ -31,3 +31,56 @@ function callBack() {
 }
 
 saludar("David", callBack)
+
+
+function saludar2(nombre) {
+    console.log(`ejecuto saludo a ${nombre}`)
+    return nombre
+}*/
+
+
+/*var arreglo = ['juan', 'juan', 'juan', 'juan']
+var nombreNuevo = 'juan'
+
+
+function  anadirNombre(arreglo, nombre, indice, cb)  {
+    arreglo[indice] = nombre
+    cb(
+        {
+            mensaje: 'exito',
+            arreglo
+        }
+    )
+}
+anadirNombre(arreglo, 'DAVID', 4, (mensaje) => {
+
+
+    console.log(mensaje);
+})*/
+
+var arregloUsuario = [1, 2, 3, 4, 5]
+
+function listarUsuario(arreglo, cb) {
+    arreglo
+        .forEach(
+            usuario => {
+                console.log(usuario);
+            });
+    cb({
+        mensaje: 'lista de usuario'
+    })
+}
+
+listarUsuario(arregloUsuario, (respuestaMensaje) => {
+    console.log(respuestaMensaje);
+})
+
+
+
+
+
+
+
+
+
+
