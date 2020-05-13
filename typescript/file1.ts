@@ -1,5 +1,6 @@
 ﻿//tipo de datos
 //Llaves{}[]
+
 const nombre: string = "David";
 const numero: number = 2;
 const bool: boolean = true;
