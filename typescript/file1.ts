@@ -49,3 +49,32 @@ class Persona {
     }
 }
 
+
+class alumno extends Persona {
+    constructor(
+        protected nombre?: string,
+        protected apellido?: string
+    ) {
+        super(nombre, apellido);
+    }
+
+    set setNombre(nombre: string | any) {
+        this.nombre = nombre;
+    }
+    set setApellido(apellido: string | any) {
+        this.apellido = apellido;
+    }
+
+    get getNombre(): string | any {
+        return this.nombre
+    }
+    get getApellido(): string | any {
+        return this.nombre
+    }
+}
+
+const alumnoNuevo: alumno = new alumno();
+alumnoNuevo.setNombre('kevin');
+alumnoNuevo.setApellido('');
+alumnoNuevo.getApellido();
+
