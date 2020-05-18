@@ -1,0 +1,11 @@
+<h1>COMPONENTE PADRE</h1>
+
+<input type="text"
+       [(ngModel)]="ValordelInput">
+{{ValordelInput}}
+ 
+<app-hijo
+[valorDelpadre]= "ValordelInput"
+
+>
+</app-hijo>

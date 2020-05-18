@@ -1,0 +1,19 @@
+<p>my-first-component works!</p>
+<h1>
+  DAVID FAL
+  {{titulo}}
+</h1>
+<p>
+  Fecha
+</p>
+{{fecha | date: 'yy MM dd'}}
+
+<p>
+  Currency
+</p>
+{{sueldo | currency}}
+
+<button (click)="saludar()">
+  {{nombreBoton}}
+</button>
+<img [src]="imagenPath" alt="">
