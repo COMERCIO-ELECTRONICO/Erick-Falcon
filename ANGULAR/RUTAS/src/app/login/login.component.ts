@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
   constructor() { }
   email = '';
   contrasena = '';
+  concontrasena = '';
 
   ngOnInit(): void {
   }

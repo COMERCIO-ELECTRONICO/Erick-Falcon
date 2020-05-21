@@ -72,14 +72,35 @@
       type="password"
       class="form-control"
       id="exampleInput"
-      aria-describedby="emai"
       [(ngModel)]="contrasena"
         name="contrasena"
         placeholder="****"
         minlength="4"
         required
-        #campoContrasena="ngModel">
+        #password="ngModel">
     </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Confirm Password</label>
+      <input
+      type="password"
+      class="form-control"
+      id="exampleInput"
+      [(ngModel)]="concontrasena"
+        name="concontrasena"
+        placeholder="****"
+        minlength="4"
+        required
+        #confirmarPassword="ngModel">
+    </div>
+
+    <div class="alert alert-danger" role="alert" 
+    *ngIf="(password.dirty === true) && confirmarPassword.value !== password.value">
+      <p> 
+        Password's no iguales 
+      </p>
+  </div>
+
 
 
     <button
