@@ -3,10 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\deber",
     "\\src\\app\\inicio",
     "\\src\\app\\inicio\\home",
-    "\\src\\app\\usuario"
+    "\\src\\app\\login"
   ],
   "SelectedNode": "\\src\\app\\inicio\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false

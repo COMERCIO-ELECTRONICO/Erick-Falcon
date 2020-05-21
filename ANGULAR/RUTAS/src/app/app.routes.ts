@@ -18,8 +18,6 @@ const rutas: Routes = [
         path: 'usuario',
         loadChildren: () => import('./usuario/usuario.module')
         .then(m => m.UsuarioModule)
-
-
     },
 
     {
@@ -28,8 +26,6 @@ const rutas: Routes = [
             .then(db => db.DeberModule)
 
     },
-
-
     {
         path: '',
         redirectTo: 'inicio',

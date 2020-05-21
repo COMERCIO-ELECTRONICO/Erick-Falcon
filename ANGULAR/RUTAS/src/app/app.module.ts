@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -9,6 +8,7 @@ import { NoEncontradoComponent } from './inicio/no-encontrado/no-encontrado.comp
 import { AppRoutesComponent } from './app.routes';
 import { UsuarioModule } from './usuario/usuario.module';
 import { DeberModule } from './deber/deber.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import { DeberModule } from './deber/deber.module';
       AppRoutingModule,
       AppRoutesComponent,
       UsuarioModule,
-      DeberModule
+      DeberModule,
+      FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
