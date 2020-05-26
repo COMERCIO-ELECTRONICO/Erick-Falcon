@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   password = '';
   seleccionadoValor;
 
-  constructor() {}
+  constructor( private readonly _router: Router ) {}
 
   ngOnInit(): void {}
 
@@ -31,9 +32,20 @@ export class LoginComponent implements OnInit {
   }
 
   ingresar(){
-
+    console.log(this.valorAutocomplete)
     if (this.password = "1234"){
       alert(this.correo);
+
+    if (this.seleccionadoValor === 'david'){
+      alert('es estudiante')
+      this._router.navigate(['/estudiante','perfil'])
+    }if(this.password='5678'){
+      alert(this.correo);
+      if(this.seleccionadoValor === 'madison'){
+        alert('es maestro')
+      this._router.navigate(['/profesor','perfil'])
+      }
+    }
     }else{
       alert("No existe");
 
