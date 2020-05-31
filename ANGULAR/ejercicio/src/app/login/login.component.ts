@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/Router';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +14,17 @@ export class LoginComponent implements OnInit {
   password = '';
   seleccionadoValor;
 
-  constructor( private readonly _router: Router ) {}
+  constructor( private readonly _router: Router, 
+    private readonly _loginService: LoginService ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this._loginService
+    .metodoGet('http://localhost:1337/usuario')
+    .subscribe((resultadoMetodoGet) => {
+      console.log('Respuest de Get');
+      console.log(resultadoMetodoGet);
+    });
+  }
 
   buscarSugerencia(evento) {
     console.log(evento.query);

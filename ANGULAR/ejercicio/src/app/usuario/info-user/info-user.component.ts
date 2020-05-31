@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, ActivatedRoute } from '@angular/Router';
 @Component({
   selector: 'app-info-user',
   templateUrl: './info-user.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly _activatedRoute: ActivatedRoute) { }
 
   nombre1 = '';
   nombre2 = '';
@@ -18,6 +18,11 @@ export class InfoUserComponent implements OnInit {
   pass = '';
   confimarPassword = '';
   ngOnInit(): void {
+    this._activatedRoute
+    .params
+    .subscribe((resultadoParametros) => {
+      console.log(resultadoParametros);
+    });
   }
   
   crearOEditar() {

@@ -16,6 +16,10 @@ module.exports = {
     edad: {
       type: 'number',
       required: true
+    },
+    //Relacion muchos a uno
+    idmascota:{
+      model: 'usuario' 
     }
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗

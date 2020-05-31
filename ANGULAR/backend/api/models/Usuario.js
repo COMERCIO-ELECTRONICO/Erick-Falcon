@@ -15,17 +15,18 @@ module.exports = {
     },
     correo: {
       type: 'string',
-      required: true
     },
     edad: {
       type: 'number',
-      required: true
     },
     casado: {
       type: 'boolean',
-      required: true
+    },
+    //Relacion uno a muchos 
+    mascota:{
+      collection: 'mascota',
+      via: 'idmascota'
     }
-
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
